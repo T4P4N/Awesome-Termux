@@ -4,4 +4,4 @@ List of Awesome Termux Articles,Video Tutorials,Bash scripts,Ported tools for te
 
 ## Contents
 - [Hacking](#hacking)
- - [Hacking Tools](https://wiki.termux.com/wiki/Hacking)
+ - [Localhost Scripts](https://www.github.com/NeoX404/Auto-Host)
