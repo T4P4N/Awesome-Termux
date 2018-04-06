@@ -4,5 +4,4 @@ List of Awesome Termux Articles,Video Tutorials,Bash scripts,Ported tools for te
 
 ## Contents
 - [Hacking](#hacking)
-###Hacking
  - [Hacking Tools](https://wiki.termux.com/wiki/Hacking)
