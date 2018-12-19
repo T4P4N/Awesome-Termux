@@ -66,25 +66,41 @@ Termux has some extra features. You can add them by installing addons:
 ### Package Management
 Termux uses apt and dpkg for package management, similar to Ubuntu or Debian. Many quirks from Ubuntu are carried over here. Development files and headers are provided in a separate package with "-dev" suffix, for example, development files for "apache2" package are in "apache2-dev". 
 
-Install package:
-```
-pkg install [package name]
-```
-
-Remove package:
-```
-pkg uninstall [package name]
-```
-
+Install a package(s):
+`
+pkg i <package name>
+`
+Update and upgrade packages:
+`
+pkg up <package name>
+`
+Remove/Uninstall Package(s):
+`
+pkg un <package name>
+`
+List files 'owned' by package:
+`
+pkg f <package name>
+`
+Reinstall a Package(s):
+`
+pkg re <package name>
+`
+Show some info about package(s):
+`
+pkg sh <package name>
+`
+Search package(s):
+`
+pkg se <package name> or <regex>
+`
 List all packages:
-```
-pkg list-all
-```
-
-Updating and upgrading packages
-```
-pkg up
-```
+`
+pkg list-a
+`
+List all installed packages:
+`
+pkg list-i                                                      `
 
 A quick warning for root users: if you prefer to use apt over pkg - never run it as root as you will mess up file permissions and SELinux contexts so you won't be able to use it as normal user. If did this and your environment was broken, do not ask for help - this is your own fault ! 
 
