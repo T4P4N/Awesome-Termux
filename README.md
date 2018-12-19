@@ -66,7 +66,7 @@ Termux has some extra features. You can add them by installing addons:
 ### Package Management
 Termux uses apt and dpkg for package management, similar to Ubuntu or Debian. Many quirks from Ubuntu are carried over here. Development files and headers are provided in a separate package with "-dev" suffix, for example, development files for "apache2" package are in "apache2-dev". 
 
-Install a package(s):
+Install package(s):
 ```
 pkg i <package name>
 ```
