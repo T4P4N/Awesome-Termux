@@ -122,7 +122,7 @@ and don't use port below 1024 or else you may get permission denied error.
 - Alpine Linux (Thanks to Hax4us)
 * [Read wiki to learn more](https://wiki.termux.com/wiki/PRoot)
 
-### some aliases that might be useful
+### Some aliases that i use:
 ```
 alias a='startarch' # For starting termux arch
 alias cls='clear'
@@ -134,6 +134,6 @@ alias p='pwd'
 alias q='logout'
 alias rf='rm -rf'
 alias weather='curl wttr.in/narela-india' # change the place to yours
-
+```
 ### FAQ
 [Read The FAQs here](https://wiki.termux.com/wiki/FAQ)
