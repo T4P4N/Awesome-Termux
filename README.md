@@ -150,6 +150,9 @@ alias p='pwd'
 alias q='logout'
 alias rf='rm -rf'
 alias weather='curl wttr.in/narela-india' # change the place to yours
+alias pst=termux-clipboard-get # paste
+alias cpy=termux-clipboard-set # copy
+alias open=termux-open # open with external app
 ```
 ### FAQ
 [Read The FAQs here](https://wiki.termux.com/wiki/FAQ)
