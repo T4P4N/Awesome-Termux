@@ -137,7 +137,7 @@ and don't use port below 1024 or else you may get permission denied error.
 - Ubuntu (Thanks to neo-oli)
 - Alpine Linux (Thanks to Hax4us)
 * [Read wiki to learn more](https://wiki.termux.com/wiki/PRoot)
-* [Also check out atilo (Linux installer for termux)](https://github.com/YadominJinta/atilo)
+* [Also check out Atilo (Linux installer for termux)](https://github.com/YadominJinta/atilo)
 ### Some aliases that i use:
 ```
 alias a='startarch' # For starting termux arch
