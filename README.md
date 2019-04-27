@@ -144,10 +144,10 @@ and don't use port below 1024 or else you may get permission denied error.
 - [Termux-WebUI](https://github.com/wcchoi/swell.sh/)
 - [Termux-ADB](https://github.com/MasterDevX/Termux-ADB)
 - [Atilo (Automated Linux installer for termux)](https://github.com/YadominJinta/atilo)
-- [Lazymux:(Automated pentesting tools installer for termux)](https://github.com/Gameye98/Lazymux)
+- [Lazymux (Automated pentesting tools installer for termux)](https://github.com/Gameye98/Lazymux)
+- [Graphical Environment(x-11) for termux](https://wiki.termux.com/wiki/Graphical_Environment)
 
 ### Keyboard Shortcuts
-
 The following shortcuts are available when using Termux with a hardware (e.g. bluetooth) keyboard by combining them with Ctrl+Alt:
 
 * ‘C’ → Create new session
@@ -162,7 +162,7 @@ The following shortcuts are available when using Termux with a hardware (e.g. bl
 * ‘V’ → Paste
 * +/- → Adjust text size
 * 1-9 → Go to numbered session
-- [Source Termux-Wiki](https://wiki.termux.com/wiki/Main_Page)
+* [Source Termux-Wiki](https://wiki.termux.com/wiki/Main_Page)
 
 ### Some aliases that i use:
 ```
