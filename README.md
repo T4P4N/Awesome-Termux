@@ -137,7 +137,33 @@ and don't use port below 1024 or else you may get permission denied error.
 - Ubuntu (Thanks to neo-oli)
 - Alpine Linux (Thanks to Hax4us)
 * [Read wiki to learn more](https://wiki.termux.com/wiki/PRoot)
-* [Also check out Atilo (Linux installer for termux)](https://github.com/YadominJinta/atilo)
+
+### Termux Related Stuff That might be useful 
+- [Oh-my-termux](https://github.com/4679/oh-my-termux)
+- [Termux-Launcher](https://github.com/amsitlab/termuxlauncher)
+- [Termux-WebUI](https://github.com/wcchoi/swell.sh/)
+- [Termux-ADB](https://github.com/MasterDevX/Termux-ADB)
+- [Atilo (Automated Linux installer for termux)](https://github.com/YadominJinta/atilo)
+- [Lazymux:(Automated pentesting tools installer for termux)](https://github.com/Gameye98/Lazymux)
+
+### Keyboard Shortcuts
+
+The following shortcuts are available when using Termux with a hardware (e.g. bluetooth) keyboard by combining them with Ctrl+Alt:
+
+* ‘C’ → Create new session
+* ‘R’ → Rename current session
+* Down arrow (or ‘N’) → Next session
+* Up arrow (or ‘P’) → Previous session
+* Right arrow → Open drawer
+* Left arrow → Close drawer
+* ‘F’ → Toggle full screen
+* ‘M’ → Show menu
+* ‘U’ → Select URL
+* ‘V’ → Paste
+* +/- → Adjust text size
+* 1-9 → Go to numbered session
+- [Source Termux-Wiki](https://wiki.termux.com/wiki/Main_Page)
+
 ### Some aliases that i use:
 ```
 alias a='startarch' # For starting termux arch
@@ -154,5 +180,6 @@ alias pst=termux-clipboard-get # paste
 alias cpy=termux-clipboard-set # copy
 alias open=termux-open # open with external app
 ```
+
 ### FAQ
 [Read The FAQs here](https://wiki.termux.com/wiki/FAQ)
