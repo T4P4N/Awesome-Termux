@@ -146,6 +146,7 @@ and don't use port below 1024 or else you may get permission denied error.
 - [Atilo (Automated Linux installer for termux)](https://github.com/YadominJinta/atilo)
 - [Lazymux (Automated pentesting tools installer for termux)](https://github.com/Gameye98/Lazymux)
 - [Graphical Environment(x-11) for termux](https://wiki.termux.com/wiki/Graphical_Environment)
+- [Termux Machine Learning](https://github.com/sanheensethi/Installing-ML-In-Termux-Python)
 
 ### Keyboard Shortcuts
 The following shortcuts are available when using Termux with a hardware (e.g. bluetooth) keyboard by combining them with Ctrl+Alt:
