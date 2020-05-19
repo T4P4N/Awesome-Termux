@@ -44,6 +44,18 @@ Termux has some extra features. You can add them by installing addons:
 - TCSH
 - [Read Wiki to learn more](https://wiki.termux.com/wiki/Shells)
 
+### Customizing Termux
+- Enable Dark UI Mode in Termux
+Add this line to your ~/.termux/termux.properties
+```
+use-black-ui=true
+```
+- Disable Vibration/haptic feedback
+Add this line to your ~/.termux/termux.properties
+```
+bell-character=ignore
+```
+- [Oh-my-termux](https://github.com/4679/oh-my-termux)
 ### Text Editors in Termux
 - Emacs : Extensible, customizable text editor-and more 
 - joe : Wordstar like text editor 
@@ -102,14 +114,14 @@ List all installed packages:
 ```
 pkg list-i                                                      `
 ```
-A quick warning for root users: if you prefer to use apt over pkg - never run it as root as you will mess up file permissions and SELinux contexts so you won't be able to use it as normal user. If did this and your environment was broken, do not ask for help - this is your own fault ! 
+A quick warning for root users: if you prefer to use apt over pkg - never run it as root as you will mess up file permissions and SELinux contexts so you won't be able to use it as normal user. If you did this and your environment was broken, do not ask for help - this is your own fault ! 
 
 * [Read wiki to learn more](https://wiki.termux.com/wiki/Package_Management)
 
-### Remote access and more
+### Servers & Daemons
 Termux is capable of accessing remote devices by using some common tools. It is also possible to turn a device running Termux into remote controlled server. 
 
-- FTP server:
+- FTP Server:
 ```
 tcpsvd -vE 0.0.0.0 2121 ftpd -w path/to/serve
 ```
@@ -119,7 +131,55 @@ and don't use port below 1024 or else you may get permission denied error.
 - SSH server:
 [Check this if you are using sshd](https://github.com/tomhiggins/TermuxSSHDsetup)
 
+- HTTP Server:
+```
+busybox httpd -p 0.0.0.0:8080
+```
+
+- HTTP Proxy Server
+```
+tinyproxy -d
+```
+[Tinyproxy](https://tinyproxy.github.io/)
+
+- MySQL/MariaDB Server
+[Read
+wiki page here](https://wiki.termux.com/wiki/MariaDB)
+or
+[Read the blog post here](https://www.nosware.com/web/install-mysql-server-termux-android/290/)
+
+- Music Player Daemon aka mpd
+[Read the wiki page here](https://wiki.archlinux.org/index.php/Music_Player_Daemon)
+Or 
+[Watch the Video Here](https://youtu.be/mfs3TKj9DVA)
+
+- Bypass NAT
+[Read the wiki page here](https://wiki.termux.com/wiki/Bypassing_NAT)
+
 * [Read wiki to learn more it includes setting up ftpd, sshd, port forwarding, tor](https://wiki.termux.com/wiki/Remote_Access)
+
+### Termux Services (Beta)
+To install termux services, run
+```
+pkg i termux-services
+```
+To then enable and run a service, run
+```
+sv-enable <service> 
+```
+If you only want to run it once, run
+```
+sv up <service> 
+```
+To later stop a service, run:
+```
+sv down <service> 
+```
+Or to disable it
+```
+sv-disable <service>
+```
+* [Read wiki to learn more](https://wiki.termux.com/wiki/Termux-services)
 
 ### IRC
 
@@ -139,7 +199,6 @@ and don't use port below 1024 or else you may get permission denied error.
 * [Read wiki to learn more](https://wiki.termux.com/wiki/PRoot)
 
 ### Termux Related Stuff That might be useful 
-- [Oh-my-termux](https://github.com/4679/oh-my-termux)
 - [Termux-Launcher](https://github.com/amsitlab/termuxlauncher)
 - [Termux-WebUI](https://github.com/wcchoi/swell.sh/)
 - [Termux-ADB](https://github.com/MasterDevX/Termux-ADB)
@@ -147,6 +206,8 @@ and don't use port below 1024 or else you may get permission denied error.
 - [Lazymux (Automated pentesting tools installer for termux)](https://github.com/Gameye98/Lazymux)
 - [Graphical Environment(x-11) for termux](https://wiki.termux.com/wiki/Graphical_Environment)
 - [Termux Machine Learning](https://github.com/sanheensethi/Installing-ML-In-Termux-Python)
+-  phpmyadmin
+[Read the blog post here](https://parzibyte.me/blog/en/2019/04/28/install-apache-php-7-android-termux/)
 
 ### Keyboard Shortcuts
 The following shortcuts are available when using Termux with a hardware (e.g. bluetooth) keyboard by combining them with Ctrl+Alt:
@@ -176,7 +237,7 @@ alias nano='nano -m' # Enable Touch/Mouse Support in nano
 alias p='pwd'
 alias q='logout'
 alias rf='rm -rf'
-alias weather='curl wttr.in/narela-india' # change the place to yours
+alias weather='curl wttr.in/delhi-india' # change the place to yours
 alias pst=termux-clipboard-get # paste
 alias cpy=termux-clipboard-set # copy
 alias open=termux-open # open with external app
