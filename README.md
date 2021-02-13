@@ -67,8 +67,8 @@ bell-character=ignore
 - Vim : Vi IMproved - enhanced vi editor 
 - Neovim : Neovim is an extension of Vim: feature-parity and backwards compatibility are high priorities.
 - zile : Lightweight clone of the Emacs text editor 
-
 * [Read wiki to learn more](https://wiki.termux.com/wiki/Text_Editors)
+
 ### IDEs
 - Codiad 
 - emacs
@@ -76,7 +76,7 @@ bell-character=ignore
 * [Read wiki to learn more](https://wiki.termux.com/wiki/IDEs)
 
 ### Package Management
-Termux uses apt and dpkg for package management, similar to Ubuntu or Debian. Many quirks from Ubuntu are carried over here. Development files and headers are provided in a separate package with "-dev" suffix, for example, development files for "apache2" package are in "apache2-dev". 
+Termux uses apt and dpkg for package management, similar to Ubuntu or Debian. Many quirks from Ubuntu are carried over here.
 
 Install package(s):
 ```
@@ -112,18 +112,18 @@ pkg list-a
 ```
 List all installed packages:
 ```
-pkg list-i                                                      `
+pkg list-i
 ```
-A quick warning for root users: if you prefer to use apt over pkg - never run it as root as you will mess up file permissions and SELinux contexts so you won't be able to use it as normal user. If you did this and your environment was broken, do not ask for help - this is your own fault ! 
+* A quick warning for root users: if you prefer to use apt over pkg - never run it as root as you will mess up file permissions and SELinux contexts so you won't be able to use it as normal user. If you did this and your environment was broken, do not ask for help - this is your own fault ! 
 
 * [Read wiki to learn more](https://wiki.termux.com/wiki/Package_Management)
 
 ### Servers & Daemons
 Termux is capable of accessing remote devices by using some common tools. It is also possible to turn a device running Termux into remote controlled server. 
 
-- FTP Server:
+- FTP Server (requires busybox):
 ```
-tcpsvd -vE 0.0.0.0 2121 ftpd -w path/to/serve
+busybox tcpsvd -vE 0.0.0.0 2121 busybox ftpd -w path/to/serve
 ```
 Warning: -w allows upload 
 and don't use port below 1024 or else you may get permission denied error.
@@ -158,7 +158,7 @@ Or
 
 * [Read wiki to learn more it includes setting up ftpd, sshd, port forwarding, tor](https://wiki.termux.com/wiki/Remote_Access)
 
-### Termux Services (Beta)
+### Termux Services
 To install termux services, run
 ```
 pkg i termux-services
@@ -208,23 +208,27 @@ sv-disable <service>
 - [Termux Machine Learning](https://github.com/sanheensethi/Installing-ML-In-Termux-Python)
 -  phpmyadmin
 [Read the blog post here](https://parzibyte.me/blog/en/2019/04/28/install-apache-php-7-android-termux/)
+- Android as VPS using termux [Read Here](https://dev.to/b3nsh4/android-phone-into-a-vps-hosting-server-hosting-apps-nginx-music-server-and-a-lot-14on)
+- Termux Dotfiles worth checking out [Click ME!](https://github.com/onlurking/termux)
 
 ### Keyboard Shortcuts
-The following shortcuts are available when using Termux with a hardware (e.g. bluetooth) keyboard by combining them with Ctrl+Alt:
+The following shortcuts are available when using Termux with a hardware (e.g. bluetooth) keyboard and also with [hacker's keyboard](https://f-droid.org/en/packages/org.pocketworkstation.pckeyboard/) on most devices:
 
-* ‘C’ → Create new session
-* ‘R’ → Rename current session
-* Down arrow (or ‘N’) → Next session
-* Up arrow (or ‘P’) → Previous session
-* Right arrow → Open drawer
-* Left arrow → Close drawer
-* ‘F’ → Toggle full screen
-* ‘M’ → Show menu
-* ‘U’ → Select URL
-* ‘V’ → Paste
-* +/- → Adjust text size
-* 1-9 → Go to numbered session
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> → Create new session
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> → Rename current session
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↓</kbd> or <kbd>N</kbd> → Next session
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd> or <kbd>P</kbd> → Previous session
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd> → Open drawer
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> → Close drawer
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd> → Toggle full screen
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> → Show menu
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>U</kbd> → Select URL
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>V</kbd> → Paste
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>+</kbd> or <kbd>-</kbd> → Adjust text size
+* <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1-9</kbd> → Go to numbered session
 * [Source Termux-Wiki](https://wiki.termux.com/wiki/Main_Page)
+
+
 
 ### Some aliases that i use:
 ```
@@ -232,10 +236,11 @@ alias a='startarch' # For starting termux arch
 alias cls='clear'
 alias e='logout'
 alias gcl='git clone'
+alias h='htop'
 alias j='jobs'
 alias nano='nano -m' # Enable Touch/Mouse Support in nano
 alias p='pwd'
-alias q='logout'
+alias q='exit'
 alias rf='rm -rf'
 alias weather='curl wttr.in/delhi-india' # change the place to yours
 alias pst=termux-clipboard-get # paste
