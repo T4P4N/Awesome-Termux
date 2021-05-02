@@ -29,7 +29,7 @@ Termux has some extra features. You can add them by installing addons:
 [Termux:Styling](https://f-droid.org/en/packages/com.termux.styling)
     Have color schemes and powerline-ready fonts customize the appearance of the Termux terminal.
 
-[Termux:Task]([Termux:Task](https://f-droid.org/en/packages/com.termux.tasker)
+[Termux:Task](https://f-droid.org/en/packages/com.termux.tasker)
     An easy way to call Termux executables from Tasker and compatible apps.
 
 [Termux:Widget](https://f-droid.org/en/packages/com.termux.widget)
