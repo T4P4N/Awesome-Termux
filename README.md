@@ -248,5 +248,29 @@ alias cpy=termux-clipboard-set # copy
 alias open=termux-open # open with external app
 ```
 
+## Root users(*use at your own risk)
+
+- Fix equalizer not working 
+`sudo pkill audiofx`
+
+- Fix other audio related issues
+`sudo pkill audioserver`
+
+- Kill a unresponsive app
+`sudo pkill app_name`
+- Show all saved wifi passwords 
+`xml sel -t -v "/WifiConfigStoreData/NetworkList/Network/WifiConfiguration//string/text()" /data/misc/wifi/WifiConfigStore.xml` 
+* Make sure you have xmlstarlet installed if not `pkg i xmlstarlet`, Works only on Android oreo maybe?Anyway Try it out!
+
+- List all open ports of your device
+`sudo netstat -tulpn`
+* Even works without root/sudo on some devices
+
+- Get all battery & usage related stats
+`sudo dumpsys batterystats`
+
+- Get the list of all running processes of android
+`sudo ps aux`
+
 ### FAQ
 [Read The FAQs here](https://wiki.termux.com/wiki/FAQ)
