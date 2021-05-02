@@ -17,22 +17,22 @@
 ### Termux:Addons
 Termux has some extra features. You can add them by installing addons:
 
-[Termux:API](https://play.google.com/store/apps/details?id=com.termux.api)
+[Termux:API](https://f-droid.org/en/packages/com.termux.api)
     Access Android and Chrome hardware features.
 
-[Termux:Boot](https://play.google.com/store/apps/details?id=com.termux.boot)
+[Termux:Boot](https://f-droid.org/en/packages/com.termux.boot)
     Run scripts when your device boots.
 
-[Termux:Float](https://play.google.com/store/apps/details?id=com.termux.window)
+[Termux:Float](https://f-droid.org/en/packages/com.termux.window)
     Run Termux in a floating window.
 
-[Termux:Styling](https://play.google.com/store/apps/details?id=com.termux.styling)
+[Termux:Styling](https://f-droid.org/en/packages/com.termux.styling)
     Have color schemes and powerline-ready fonts customize the appearance of the Termux terminal.
 
-[Termux:Task](https://play.google.com/store/apps/details?id=com.termux.tasker)
+[Termux:Task]([Termux:Task](https://f-droid.org/en/packages/com.termux.tasker)
     An easy way to call Termux executables from Tasker and compatible apps.
 
-[Termux:Widget](https://play.google.com/store/apps/details?id=com.termux.widget)
+[Termux:Widget](https://f-droid.org/en/packages/com.termux.widget)
     Start small scriptlets from the home screen.
 
 ### Shells in Termux 
