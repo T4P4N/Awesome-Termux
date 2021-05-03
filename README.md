@@ -272,5 +272,17 @@ alias open=termux-open # open with external app
 - Get the list of all running processes of android
 `sudo ps aux`
 
+- Enable write acess to external sdcard
+- First install magisk module named [ExSDCard Access Enabler](https://github.com/Magisk-Modules-Repo/ExSDCard)
+- Than Restart your device & paste this in termux
+
+```
+ln -sf /mnt/media_rw/SDCARDNUMBER ext1sdcard
+```
+
+SDCARDNUMBER will be something like this `8982-18F9`
+ext1sdcard is now your sdcard with read & write permissions.
+
+
 ### FAQ
 [Read The FAQs here](https://wiki.termux.com/wiki/FAQ)
