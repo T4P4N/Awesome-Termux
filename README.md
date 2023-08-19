@@ -18,7 +18,7 @@
 Termux has some extra features. You can add them by installing addons:
 
 [Termux:API](https://f-droid.org/en/packages/com.termux.api)
-    Access Android and Chrome hardware features.
+    Access Android and Chrome hardware and ABI/API features.
 
 [Termux:Boot](https://f-droid.org/en/packages/com.termux.boot)
     Run scripts when your device boots.
@@ -35,12 +35,14 @@ Termux has some extra features. You can add them by installing addons:
 [Termux:Widget](https://f-droid.org/en/packages/com.termux.widget)
     Start small scriptlets from the home screen.
 
-### Shells in Termux 
+### Shells in Termux Official Repository
 - Zsh
 - Bash
+- Fish
+- Nushell
+- Beanshell
 - Xonsh
 - IPython
-- Fish 
 - TCSH
 - [Read Wiki to learn more](https://wiki.termux.com/wiki/Shells)
 
@@ -56,24 +58,19 @@ Add this line to your ~/.termux/termux.properties
 bell-character=ignore
 ```
 - [Oh-my-termux](https://github.com/4679/oh-my-termux)
-### Text Editors in Termux
-- Emacs : Extensible, customizable text editor-and more 
+### Text Editors and IDEs in Termux Official Repository
+- emacs : Extensible, customizable text editor-and more 
 - joe : Wordstar like text editor 
 - jupp : user friendly full screen text editor 
-- Micro : Micro is a terminal-based text editor that aims to be easy to use and intuitive (notepad like keybindings crtl+c crtl+v etc.)
+- micro : Micro is a terminal-based text editor that aims to be easy to use and intuitive (notepad like keybindings crtl+c crtl+v etc.)
 - nano : nano is a small and friendly editor.
 - ne : Easy-to-use and powerful text editor 
 - sed : GNU stream text editor (More useful in bash scripting)
-- Vim : Vi IMproved - enhanced vi editor 
-- Neovim : Neovim is an extension of Vim: feature-parity and backwards compatibility are high priorities.
-- zile : Lightweight clone of the Emacs text editor 
-* [Read wiki to learn more](https://wiki.termux.com/wiki/Text_Editors)
-
-### IDEs
-- Codiad 
-- emacs
-- vim
-* [Read wiki to learn more](https://wiki.termux.com/wiki/IDEs)
+- vim : Vi IMproved - enhanced vi editor 
+- neovim : Neovim is an extension of Vim: feature-parity and backwards compatibility are high priorities.
+- zile : Lightweight clone of the Emacs text editor
+- codiad : 
+* Read wiki of [Text Editors](https://wiki.termux.com/wiki/Text_Editors) or [IDEs](https://wiki.termux.com/wiki/IDEs) to learn more
 
 ### Package Management
 Termux uses apt and dpkg for package management, similar to Ubuntu or Debian. Many quirks from Ubuntu are carried over here.
@@ -181,13 +178,15 @@ sv-disable <service>
 ```
 * [Read wiki to learn more](https://wiki.termux.com/wiki/Termux-services)
 
-### IRC
+### Some IRC Clients
 
 - ERC is an IRC client for Emacs.
 - irssi is an IRC client.
 - weechat is an IRC chat client.
 
 ### Proot (Run Linux Distributions inside Termux)
+Opens possibility to install way more packages, by default very hard or impossible
+to install on termux.
 - Arch (Thanks to sdrausty)
 - Archstrike (just modifies the pacman.conf file)
 - Blackarch (just modifies the pacman.conf file)
