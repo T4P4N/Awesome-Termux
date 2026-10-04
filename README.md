@@ -198,6 +198,7 @@ to install on termux.
 * [Read wiki to learn more](https://wiki.termux.com/wiki/PRoot)
 
 ### Termux Related Stuff That might be useful 
+- [Cortex](https://github.com/ssfuisu/cortex) - High-performance native Ubuntu 24.04 LTS & Glibc terminal for Android with zero PRoot overhead and full APT support.
 - [Termux-Launcher](https://github.com/amsitlab/termuxlauncher)
 - [Termux-WebUI](https://github.com/wcchoi/swell.sh/)
 - [Termux-ADB](https://github.com/MasterDevX/Termux-ADB)
