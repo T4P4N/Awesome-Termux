@@ -198,6 +198,8 @@ to install on termux.
 * [Read wiki to learn more](https://wiki.termux.com/wiki/PRoot)
 
 ### Termux Related Stuff That might be useful 
+- [moxsh-terminal](https://github.com/codecloud-dev/moxsh-terminal) - Glassy Linux terminal for Android with a custom PRoot engine — brings an iOS-smooth Linux experience to your phone.
+- [moxsh-plugins](https://github.com/codecloud-dev/moxsh-plugins) - Plugin store & manifest spec for moxsh-terminal — one-tap install ecosystem on Android.
 - [Termux-Launcher](https://github.com/amsitlab/termuxlauncher)
 - [Termux-WebUI](https://github.com/wcchoi/swell.sh/)
 - [Termux-ADB](https://github.com/MasterDevX/Termux-ADB)
