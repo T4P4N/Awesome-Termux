@@ -205,6 +205,7 @@ to install on termux.
 - [Lazymux (Automated pentesting tools installer for termux)](https://github.com/Gameye98/Lazymux)
 - [Graphical Environment(x-11) for termux](https://wiki.termux.com/wiki/Graphical_Environment)
 - [Termux Machine Learning](https://github.com/sanheensethi/Installing-ML-In-Termux-Python)
+- [Verdroid (Android AI agent that drives Termux)](https://github.com/chr243/Verdroid)
 -  phpmyadmin
 [Read the blog post here](https://parzibyte.me/blog/en/2019/04/28/install-apache-php-7-android-termux/)
 - Android as VPS using termux [Read Here](https://dev.to/b3nsh4/android-phone-into-a-vps-hosting-server-hosting-apps-nginx-music-server-and-a-lot-14on)
